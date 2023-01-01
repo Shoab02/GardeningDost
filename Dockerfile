@@ -10,4 +10,4 @@ RUN ls -la $APP_HOME/
 
 RUN pip install -r requirements.txt
 
-CMD [ "streamlit","run","false","leaf_classifier.py" ]
+CMD [ "streamlit","run","--server.enableCORS","false","leaf_classifier.py" ]
